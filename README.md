@@ -13,7 +13,7 @@ Docker or Podman: Ensure you have either Docker or Podman installed on your syst
 
 The image is built using the provided Dockerfile. This process downloads and configures all necessary system libraries, Conda, Python environments, and installs the required packages as a non-root user (bambu_user).
 
-Save the Dockerfile content to a file named Dockerfile in an empty directory.
+Clone the repo and cd into the directory where is saved
 
 Build the image using the following command (replace hls4ml-bambu with your desired image name):
 
