@@ -2,7 +2,7 @@
 
 This repository provides a self-contained Docker image for working with hls4ml and the Bambu HLS compiler backend.
 
-The container is based on Ubuntu 22.04 and includes Miniconda3, Python 3.10, TensorFlow, Keras (CPU version), and the hls4ml repository (nghielme/hls4ml@bambu-backend). It also installs the bambu executable.
+The container is based on Ubuntu 22.04 and includes Miniconda3, Python 3.10, TensorFlow, Keras (CPU version), and the hls4ml repository [fork of nghielme](https://github.com/nghielme/hls4ml/tree/bambu-backend). It also installs the bambu executable.
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ If this command executes successfully, the system dependencies and the path to t
 
 ### Testing HLS4ML Project Generation and Build
 
-Firstly copy the [[hls_config.py]] file into the container 
+Firstly copy the [hls_config.py](hls_config.py) file into the container 
 Then enter the python shell:
 ```
 python3
