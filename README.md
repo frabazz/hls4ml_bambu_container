@@ -9,7 +9,7 @@ The container is based on Ubuntu 22.04 and includes Miniconda3, Python 3.10, Ten
 Docker or Podman: Ensure you have either Docker or Podman installed on your system.
 
 ## Setup 
-1. Building the Docker Image
+### Building the Docker Image
 
 The image is built using the provided Dockerfile. This process downloads and configures all necessary system libraries, Conda, Python environments, and installs the required packages as a non-root user (bambu_user).
 
@@ -23,7 +23,7 @@ podman build -t hls4ml-bambu .
 docker build -t hls4ml-bambu .
 ```
 
-2. Running the Container
+### Running the Container
 
 Run the built image in interactive mode. This command will execute the ENTRYPOINT defined in the Dockerfile, which activates the bambu_env Conda environment and drops you into a bash shell.
 
@@ -54,16 +54,7 @@ If this command executes successfully, the system dependencies and the path to t
 
 ### Testing HLS4ML Project Generation and Build
 
-You can test the core functionality of HLS4ML by running an example script
-
-1. Copy the config
-
-Firstly copy the hls_config.py file into the container 
-
-
-2. Trigger the HLS Build
-
-
+Firstly copy the [[hls_config.py]] file into the container 
 Then enter the python shell:
 ```
 python3
