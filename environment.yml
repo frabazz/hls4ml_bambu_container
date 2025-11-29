@@ -1,0 +1,25 @@
+name: bambu-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10  # Downgraded to 3.10 for ortools compatibility
+  - jupyterhub
+  - pydot
+  - graphviz
+  - pytest
+  - pytest-cov
+  - pip
+  - pip:
+    - pytest-randomly
+    - jupyter
+    - onnx>=1.4.0
+    - onnxruntime>=1.17.0
+    - matplotlib
+    - pandas
+    - seaborn
+    - pydigitalwavetools==1.1
+    - pyyaml
+    - tensorflow==2.14
+    - git+https://github.com/fastmachinelearning/qonnx.git
+    - torch
+    - git+https://github.com/fastmachinelearning/qkeras.git
