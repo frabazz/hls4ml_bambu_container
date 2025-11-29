@@ -2,12 +2,18 @@
 
 This repository provides a self-contained Docker image for working with hls4ml and the Bambu HLS compiler backend.
 
-Firsly clone the repo. Once inside:
+Firstly clone the repo. Once inside:
 ```
 $ docker build -t bambu_img .
 ```
 
-Then
+Then run the container:
+
+```
+$ docker run -it bambu_img --name bambu_container
+```
+
+Once inside the container
 
 ```
 $ cd /home/bambu_user
